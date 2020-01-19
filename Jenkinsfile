@@ -4,8 +4,7 @@ stages {
         stage('build') {
             steps {
                 echo 'Building..'
-				sh 'pwd; chmod 777 build deploy test; ./build'
-				
+				sh 'pwd; chmod 777 build deploy test; ./build'		
             }
         }
         stage('deploy') {
